@@ -26,6 +26,35 @@
             10px 10px 0 #6D1A33;
         position: relative;
         z-index: 1;
+
+        @media(max-width: 1000px) {
+            font-size: 80px;
+
+            text-shadow:
+                -3px -3px 0 #6D1A33,
+                3px -3px 0 #6D1A33,
+                -3px 3px 0 #6D1A33,
+                3px 3px 0 #6D1A33,
+                0px 3px 0 #6D1A33,
+                0px -3px 0 #6D1A33,
+                -3px 0px 0 #6D1A33,
+                3px 0px 0 #6D1A33,
+                7px 7px 0 #6D1A33;
+        }
+
+        @media(max-width: 600px) {
+            font-size: 60px;
+            text-shadow:
+                -2px -2px 0 #6D1A33,
+                2px -2px 0 #6D1A33,
+                -2px 2px 0 #6D1A33,
+                2px 2px 0 #6D1A33,
+                0px 2px 0 #6D1A33,
+                0px -2px 0 #6D1A33,
+                -2px 0px 0 #6D1A33,
+                2px 0px 0 #6D1A33,
+                5px 5px 0 #6D1A33;
+        }
     }
 
     &_bottom {
@@ -40,6 +69,10 @@
 
         img {
             height: 450px;
+
+            @media(max-width: 600px) {
+                height: 300px;
+            }
         }
     }
 

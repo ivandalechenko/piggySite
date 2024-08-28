@@ -7,11 +7,23 @@
     align-content: center;
     flex-wrap: wrap;
 
+    @media(max-width: 700px) {
+        display: none;
+    }
+
+    @media(max-width: 1150px) {
+        height: 1200px;
+    }
+
     &_pig {
         width: 100% !important;
         align-items: end;
         top: 200px;
         left: -680px;
+
+        @media(max-width: 1200px) {
+            display: none;
+        }
 
         img {
             width: 400px;
@@ -42,8 +54,11 @@
         &_content {
             align-items: flex-start !important;
             width: 70% !important;
-
             top: 160px;
+
+            @media(max-width: 700px) {
+                width: 90% !important;
+            }
 
             &_inner {
                 display: flex;
@@ -54,11 +69,19 @@
             &_num {
                 min-width: 32px;
                 text-shadow: 4px 4px 0px black;
-                font-size: 32px;
+                font-size: 32px
             }
 
             &_text {
                 font-size: 24px;
+
+                @media(max-width: 1100px) {
+                    font-size: 20px;
+                }
+
+                @media(max-width: 900px) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -77,6 +100,18 @@
             top: -590px;
             left: -185px;
 
+            @media(max-width: 1150px) {
+                width: 100%;
+                left: 0px;
+                top: -600px;
+            }
+
+            @media(max-width: 700px) {
+                img {
+                    width: 150% !important;
+                }
+            }
+
         }
 
         &2 {
@@ -88,6 +123,19 @@
                 width: 80% !important;
                 top: 110px;
             }
+
+            @media(max-width: 1150px) {
+                width: 100%;
+                left: 0px;
+                top: -200px;
+            }
+
+            @media(max-width: 700px) {
+                img {
+                    width: 150% !important;
+                }
+            }
+
         }
 
         &3 {
@@ -95,6 +143,47 @@
             top: -220px;
             left: -80px;
 
+            @media(max-width: 1150px) {
+                width: 100%;
+                left: 0px;
+                top: 50px;
+            }
+
+            @media(max-width: 800px) {
+                .story_element_content {
+
+                    top: 100px;
+                }
+            }
+
+            @media(max-width: 700px) {
+                img {
+                    width: 150% !important;
+                }
+            }
+
         }
+    }
+}
+
+.storyMob {
+    display: none;
+
+    @media(max-width: 700px) {
+        display: block;
+    }
+
+    &_header {
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        padding: 0px 16px;
+    }
+
+    &_element {
+        font-size: 18px;
+        color: black;
+        padding: 0px 16px;
+        margin-top: 18px;
     }
 }
