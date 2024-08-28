@@ -1,0 +1,77 @@
+@import 'aboutCoins';
+
+.about {
+    min-height: 600px;
+    background-color: #FFD4DF;
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+
+    &_bg {
+        width: 100% !important;
+        align-items: end;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_laptop {
+        width: 100% !important;
+        align-items: end;
+        top: 160px;
+
+        img {
+            width: 800px;
+        }
+
+        &_inner {
+            width: 100% !important;
+            align-items: end;
+            top: -90px;
+
+            &_header {
+                margin-top: 24px;
+                width: 100%;
+                text-align: center;
+                font-size: 42px;
+                text-shadow:
+                    -2px -2px 0 #000,
+                    2px -2px 0 #000,
+                    -2px 2px 0 #000,
+                    2px 2px 0 #000;
+            }
+
+            &_inner {
+                min-width: 440px;
+                min-height: 330px;
+                background-color: #EEEEEE;
+                border-radius: 32px;
+                border: 3px solid #000;
+            }
+        }
+
+    }
+
+    &_toStoryTran {
+        background-color: #966A51;
+        width: 100%;
+        height: 400px;
+        border-top: 10px solid black;
+        box-shadow: inset 0px 10px 0px rgba(#fff, .2);
+        display: flex;
+        align-content: end;
+        flex-wrap: wrap;
+
+        &_tran {
+            width: 100% !important;
+            align-items: end;
+            top: 150px;
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+}

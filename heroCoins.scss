@@ -1,0 +1,79 @@
+.hero {
+
+    &_coin {
+        img {
+            transform-origin: center;
+        }
+    }
+
+    &_coin1 {
+        width: 100% !important;
+        top: -200px;
+
+        left: 400px;
+
+        img {
+            width: 180px;
+        }
+    }
+
+    &_coin2 {
+        width: 100% !important;
+        top: -400px;
+
+        left: 300px;
+
+        img {
+            width: 100px;
+            transform: rotate(70deg);
+        }
+    }
+
+    &_coin3 {
+        width: 100% !important;
+        top: -600px;
+
+        left: 500px;
+
+        img {
+            width: 200px;
+            transform: rotate(140deg);
+        }
+    }
+
+    &_coin4 {
+        width: 100% !important;
+        top: -100px;
+
+        left: -400px;
+
+        img {
+            width: 120px;
+            transform: rotate(140deg);
+        }
+    }
+
+    &_coin5 {
+        width: 100% !important;
+        top: -300px;
+
+        left: -500px;
+
+        img {
+            width: 160px;
+            transform: rotate(30deg);
+        }
+    }
+
+    &_coin6 {
+        width: 100% !important;
+        top: -400px;
+
+        left: -300px;
+
+        img {
+            width: 80px;
+            transform: rotate(80deg);
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import 'heroCoins';
+
+.hero {
+    min-height: 100vh;
+    background: #FF466B url('/img/heroBgDecorElement.svg');
+    background-size: 300px;
+    padding-top: 160px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 400px;
+
+    &_top {
+        font-size: 120px;
+        width: 100%;
+        text-align: center;
+        text-shadow:
+            -4px -4px 0 #6D1A33,
+            4px -4px 0 #6D1A33,
+            -4px 4px 0 #6D1A33,
+            4px 4px 0 #6D1A33,
+            0px 4px 0 #6D1A33,
+            0px -4px 0 #6D1A33,
+            -4px 0px 0 #6D1A33,
+            4px 0px 0 #6D1A33,
+            10px 10px 0 #6D1A33;
+        position: relative;
+        z-index: 1;
+    }
+
+    &_bottom {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+
+    &_pig {
+        width: 100% !important;
+        align-items: end;
+
+        img {
+            height: 450px;
+        }
+    }
+
+    &_trans {
+        width: 100% !important;
+        align-items: end;
+
+        img {
+            // max-height: 600px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+}
