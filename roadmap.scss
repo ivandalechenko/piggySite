@@ -1,6 +1,6 @@
 .roadmap {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     background: linear-gradient(to bottom, #fff, #FF7ABA);
 
     @media(max-width: 900px) {
@@ -10,7 +10,7 @@
     &_header {
         width: 100%;
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         font-size: 80px;
         text-shadow:
@@ -23,12 +23,52 @@
             -4px 0px 0 #6D1A33,
             4px 0px 0 #6D1A33,
             10px 10px 0 #6D1A33;
-        column-gap: 24px;
+        column-gap: 32px;
+        row-gap: 24px;
 
         img {
-            width: 100px;
+            width: 160px;
         }
     }
+
+    &_subheader {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-shadow:
+            -2px -2px 0 #6D1A33,
+            2px -2px 0 #6D1A33,
+            -2px 2px 0 #6D1A33,
+            2px 2px 0 #6D1A33,
+            0px 2px 0 #6D1A33,
+            0px -2px 0 #6D1A33,
+            -2px 0px 0 #6D1A33,
+            2px 0px 0 #6D1A33,
+            5px 5px 0 #6D1A33;
+        column-gap: 32px;
+        row-gap: 24px;
+        margin-top: 120px;
+    }
+
+    &_copyright {
+        margin-top: 30px;
+        font-size: 18px;
+        width: 100%;
+        text-shadow:
+            -1px -1px 0 #6D1A33,
+            1px -1px 0 #6D1A33,
+            -1px 1px 0 #6D1A33,
+            1px 1px 0 #6D1A33,
+            0px 1px 0 #6D1A33,
+            0px -1px 0 #6D1A33,
+            -1px 0px 0 #6D1A33,
+            1px 0px 0 #6D1A33,
+            3px 3px 0 #6D1A33;
+        text-align: center;
+    }
+
 
     &_1To2Steps {
         width: 100% !important;
@@ -103,11 +143,11 @@
     display: none;
     margin-top: 32px;
     padding-bottom: 30px;
+    background: linear-gradient(to bottom, #fff, #FF7ABA);
 
     @media(max-width: 900px) {
         display: block;
     }
 
-    background: linear-gradient(to bottom, #fff, #FF7ABA);
 
 }
