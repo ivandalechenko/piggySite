@@ -18,12 +18,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            set -e
             
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-            
-            cd /home/tonmole/tonmole-game-interface
+            cd /var/www/piggy
             
             echo "Pulling the latest code from the repository"
             git fetch origin
