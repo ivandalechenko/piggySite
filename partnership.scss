@@ -1,0 +1,55 @@
+.partnership {
+    &_header {
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+
+        text-shadow:
+            0px 4px 0px #6D1A33,
+            4px 0px 0px #6D1A33,
+            0px -4px 0px #6D1A33,
+            -4px 0px 0px #6D1A33,
+            4px 4px 0px #6D1A33,
+            -4px 4px 0px #6D1A33,
+            4px -4px 0px #6D1A33,
+            -4px -4px 0px #6D1A33,
+            8px 8px 0px #6D1A33;
+
+        @media(max-width: 550px) {
+            font-size: 40px;
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 180px;
+        margin-top: 32px;
+        gap: 20px;
+
+    }
+
+    &_element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        height: 100px;
+        width: calc(33.33% - 20px);
+        border-radius: 12px;
+        min-width: 320px;
+
+        @media(max-width: 400px) {
+            min-width: 280px;
+        }
+
+        img {
+            max-height: 90px;
+            max-width: 90%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
