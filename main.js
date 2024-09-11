@@ -1,10 +1,8 @@
 import './style.scss'
-
 import gsap from 'gsap';
 import { ScrollTrigger, TextPlugin } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin)
-
 
 
 
@@ -148,3 +146,22 @@ window.onload = function () {
         });
     }, 500);
 };
+let copiedTa;
+
+const copyAddress = () => {
+    navigator.clipboard.writeText('TJzQhoKYFLYRLwuRi2bun2HPGsEKGqp84C')
+        .then(() => {
+            clearTimeout(copiedTa)
+            document.getElementById('copied').style.opacity = 1;
+            copiedTa = setTimeout(() => {
+                document.getElementById('copied').style.opacity = 0;
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Ошибка при копировании: ', err);
+        });
+}
+
+document.getElementById('presale_address').onclick = copyAddress;
+document.getElementById('presale_address2').onclick = copyAddress;
+
