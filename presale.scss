@@ -96,6 +96,15 @@
                 font-size: 20px;
                 color: #000;
                 margin-top: 12px;
+                line-height: 28px;
+
+                span {
+                    background-color: #FF6080;
+                    border-radius: 100px;
+                    padding: 2px 4px;
+                    color: #fff;
+                    border: 2px solid #000;
+                }
             }
 
             &_header {
