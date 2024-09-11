@@ -7,6 +7,7 @@
 @import "roadmap";
 @import "presale";
 @import "partnership";
+@import "tokenomics";
 
 .container {
     width: 100%;
@@ -51,5 +52,17 @@
         box-shadow: 4px 4px 12px rgba(#000, .4);
         transition: opacity 200ms;
         opacity: 0;
+    }
+}
+
+.rights {
+    width: 100%;
+    text-align: center;
+    padding: 80px 12px;
+    background-color: #FF7ABA;
+    font-size: 32px;
+
+    @media(max-width: 550px) {
+        font-size: 24px;
     }
 }

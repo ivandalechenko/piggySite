@@ -63,13 +63,27 @@
             justify-content: center;
             row-gap: 90px;
         }
+
+        @media(max-width: 420px) {
+            row-gap: 30px;
+        }
     }
 
     &_guide {
+        position: relative;
+
+        @media(max-width: 600px) {
+            left: 40px;
+        }
+
+        @media(max-width: 420px) {
+            left: 0px;
+        }
 
         &_block {
             position: relative;
             z-index: 2;
+
 
             padding: 20px;
             width: 100%;
@@ -129,6 +143,11 @@
             img {
                 width: 320px;
             }
+
+            @media(max-width: 420px) {
+                display: none;
+            }
+
 
         }
     }
