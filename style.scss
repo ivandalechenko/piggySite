@@ -58,11 +58,26 @@
 .rights {
     width: 100%;
     text-align: center;
-    padding: 80px 12px;
-    background-color: #FF7ABA;
+    padding: 20px 12px;
+    background-color: #FF7ABA44;
     font-size: 32px;
+    color: #000;
+    padding-top: 40px;
 
     @media(max-width: 550px) {
         font-size: 24px;
+    }
+}
+
+.botMedia {
+    background-color: #FF7ABA44;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+
+    img {
+        filter: invert(1);
     }
 }
