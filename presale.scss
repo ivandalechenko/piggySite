@@ -169,6 +169,16 @@
             width: 100%;
         }
 
+        &_soon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 300px;
+            }
+        }
+
         &_btn {
             display: flex;
             width: 100%;
