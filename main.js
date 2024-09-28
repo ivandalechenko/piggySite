@@ -149,7 +149,7 @@ window.onload = function () {
 let copiedTa;
 
 const copyAddress = () => {
-    navigator.clipboard.writeText('TJzQhoKYFLYRLwuRi2bun2HPGsEKGqp84C')
+    navigator.clipboard.writeText('0xfDE44dEa7AEDAdaD89815045E1340E9150186Aca')
         .then(() => {
             clearTimeout(copiedTa)
             document.getElementById('copied').style.opacity = 1;
